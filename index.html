@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>Word Wheel Solver</title>
+    <div class="flex-col center">
+        <div>
+            <div class="flex-row input-cont">
+                <label class="label" for="mid_lett">Middle letter</label>
+                <input class="input" type="text" id="mid_lett" name="mid_lett">
+            </div>
+            <div class="flex-row input-cont">
+                <label class="label" for="other_letts">Other letters</label>
+                <input class="input" type="text" id="other_letts" name="other_letts">
+            </div>
+            <button id="solve_btn" class="button" onclick="solve()">Solve</button>
+            <div id='wave_load' class="wave-cont hide">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+        <div class="flex-col">
+            <div id="3-letter" class="output-cont">
+                <label class="label">3 letter words</label>
+                <div id="output_3" class="word-output"></div>
+            </div>
+            <div id="4-letter" class="output-cont">
+                <label class="label">4 letter words</label>
+                <div id="output_4" class="word-output"></div>
+            </div>
+            <div id="5-letter" class="output-cont">
+                <label class="label">5 letter words</label>
+                <div id="output_5" class="word-output"></div>
+            </div>
+            <div id="6-letter" class="output-cont">
+                <label class="label">6 letter words</label>
+                <div id="output_6" class="word-output"></div>
+            </div>
+            <div id="7-letter" class="output-cont">
+                <label class="label">7 letter words</label>
+                <div id="output_7" class="word-output"></div>
+            </div>
+            <div id="8-letter" class="output-cont">
+                <label class="label">8 letter words</label>
+                <div id="output_8" class="word-output"></div>
+            </div>
+            <div id="9-letter" class="output-cont">
+                <label class="label">9 letter words</label>     
+                <div id="output_9" class="word-output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <link rel='stylesheet' href='index.css'>
+</html>
